@@ -13,5 +13,5 @@ RUN pip3 install -U pip && pip3 install -U -r requirements.txt
 RUN mkdir /shivam
 WORKDIR /shivam
 COPY start.sh /start.sh
-EXPOSE 5001
+EXPOSE 5001 5000 8080 80 8000
 CMD ["python", "bot.py"]
